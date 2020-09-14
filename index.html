@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="./styles.css">
+<title>Tone Is Where The Heart Is</title>
+</head>
+
+<body>
+    <section class="home" id="home">
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href='./story.html'>Our Love Story</a>
+                </li>
+                <li>
+                    <a href='./gallery.html'>Gallery</a>
+                </li>
+                <li>
+                    <a href='#stream'>Stream</a>
+                </li>
+                <li>
+                    <a href='./outfits.html'>#WeddingLooks</a>
+                </li>
+                <li>
+                    <a href='./guestBook.html'>Guestbook</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="hero"></div>
+
+    <section class="stream" id="stream">
+        <div class="stream-info">
+            <h2>Live Stream Our Big Day</h2>
+            <p>We'd love for all of you to be able to take part in our wedding, so please check back the week of for more detals
+                on how to stream the cierimony</p>
+            <p>If you're not able to watch the Live Stream, the stream vidoeo will be added here after the cerimony</p>
+        </div>
+    </section>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: process.env.API_KEY,
+            authDomain: "tone-wedding.firebaseapp.com",
+            databaseURL: "https://tone-wedding.firebaseio.com",
+            projectId: "tone-wedding",
+            storageBucket: "tone-wedding.appspot.com",
+            messagingSenderId: "703620598417",
+            appId: "1:703620598417:web:2707cb27b0431bebe5cd30",
+            measurementId: "G-TSLDS1NV4G"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+</body>
+
+</html>
