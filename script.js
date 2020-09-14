@@ -14,24 +14,30 @@ postButton.addEventListener("click", function (e) {
         name: messageName,
         comment: messageBlock
     };
-    comments.unshift(newMessage);
+
+    messages.unshift(newMessage);
     document.getElementById("guestbook-messages").innerHTML = '';
     document.getElementById("message-name").value = '';
     document.getElementById("message-block").value = '';
-    createComments(comments);
+    console.log(newMessage);
+    createMessages(messages);
 });
 
+console.log(messages)
+
 function createMessage(messageObject) {
-    let displayMessage = document.getElementById("guestbook-message");
+    let displayMessage = document.getElementById("guestbook-messages");
     let newMessageDiv = document.createElement("div");
     let newMessageH5 = document.createElement("h5");
     newMessageH5.classList.add("guestbook-message");
     let newMessageP = document.createElement("p");
     newMessageP.classList.add("message-p");
+
     newMessageDiv.appendChild(newMessageH5);
     newMessageDiv.appendChild(newMessageP);
     displayMessage.appendChild(newMessageDiv);
-    newMessageH5.innerHTML = messagetObject.name;
+
+    newMessageH5.innerHTML = messageObject.name;
     newMessageP.innerHTML = messageObject.comment;
 }
 
