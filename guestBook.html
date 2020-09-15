@@ -45,13 +45,35 @@
 
     </div>
 
-    <div id="guestbook-messages" class="guestbook-messages">
+    <div id="guestbook-messages" class="guestbook-messages"></div>
 
-        <!-- <p class="messages-name">John and Linda</p>
-        <p class="messages-message">LCJnoadsbvoibdsov odvboiDHFO adcoqwirvns doibcoiwbdvo ajsojs doibsdcoibsd ojs kjsodubcoabdvobsDV</p>
- -->
 
-    </div>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: process.env.API_KEY,
+            authDomain: "tone-wedding.firebaseapp.com",
+            databaseURL: "https://tone-wedding.firebaseio.com",
+            projectId: "tone-wedding",
+            storageBucket: "tone-wedding.appspot.com",
+            messagingSenderId: "703620598417",
+            appId: "1:703620598417:web:2707cb27b0431bebe5cd30",
+            measurementId: "G-TSLDS1NV4G"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
     <script src="./script.js"></script>
 
 </body>

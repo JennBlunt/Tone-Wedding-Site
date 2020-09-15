@@ -28,10 +28,11 @@ console.log(messages)
 function createMessage(messageObject) {
     let displayMessage = document.getElementById("guestbook-messages");
     let newMessageDiv = document.createElement("div");
+    newMessageDiv.classList.add("messages");
     let newMessageH5 = document.createElement("h5");
-    newMessageH5.classList.add("guestbook-message");
+    newMessageH5.classList.add("message-name");
     let newMessageP = document.createElement("p");
-    newMessageP.classList.add("message-p");
+    newMessageP.classList.add("message-msg");
 
     newMessageDiv.appendChild(newMessageH5);
     newMessageDiv.appendChild(newMessageP);
